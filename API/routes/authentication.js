@@ -8,7 +8,7 @@ var dbConnect = require('./dbConnect.js');
 
 // Login
 router.post('/login', function (req, res) {
-	console.log(req.body);
+
 	let data = [
 		req.body.Email
 	];
@@ -30,6 +30,7 @@ router.post('/login', function (req, res) {
 			response.code = 3;
 			response.message = "E-Mail Adress does not exist.";
 		}
+		console.log(response);
 		res.send(response);
 	});
 });
