@@ -8,7 +8,7 @@ var dbConnect = require('./dbConnect.js');
 
 // Login
 router.post('/login', function (req, res) {
-
+	console.log(req.body);
 	let data = [
 		req.body.Email
 	];
