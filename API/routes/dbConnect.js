@@ -6,7 +6,7 @@ var conn = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	password: '',
-	database: 'world',
+	database: 'AR_DB',
 	multipleStatements: true
 });
 

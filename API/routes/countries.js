@@ -1,5 +1,3 @@
-// TODO: Schemas, display all countries
-
 // import libraries
 var express = require('express');
 var router = express.Router();
@@ -7,10 +5,6 @@ var js2xmlparser = require('js2xmlparser');
 var xmlparser = require('express-xml-bodyparser');
 var bodyParser = require('body-parser');
 var dbConnect = require('./dbConnect.js');
-
-
-
-
 
 // Show all results
 router.get('/', function(req, res, next) {
