@@ -25855,7 +25855,7 @@ IL_006d:
 		Type_t * L_20 = ___objectType0;
 		NullCheck(L_19);
 		bool L_21;
-		L_21 = VirtFuncInvoker1< bool, Type_t * >::Invoke(102 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_19, L_20);
+		L_21 = VirtFuncInvoker1< bool, Type_t * >::Invoke(103 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_19, L_20);
 		if (!L_21)
 		{
 			goto IL_00bd;

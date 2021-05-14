@@ -2,13 +2,13 @@ ScriptsOnlyBuild:
   usedScripts:
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.XR.ARFoundation.dll:
-    - UnityEngine.XR.ARFoundation.ARCameraBackground
-    - UnityEngine.XR.ARFoundation.ARCameraManager
-    - UnityEngine.XR.ARFoundation.ARInputManager
-    - UnityEngine.XR.ARFoundation.ARPoseDriver
-    - UnityEngine.XR.ARFoundation.ARSession
-    - UnityEngine.XR.ARFoundation.ARSessionOrigin
+    Unity.TextCore.dll:
+    - UnityEngine.TextCore.Text.FontAsset
+    - UnityEngine.TextCore.Text.SpriteAsset
+    - UnityEngine.TextCore.Text.TextColorGradient
+    - UnityEngine.TextCore.Text.TextStyleSheet
+    Unity.UIElements.Text.dll:
+    - UnityEngine.UIElements.Text.PanelTextSettings
     Unity.XR.ARKit.Editor.dll:
     - UnityEditor.XR.ARKit.ARKitSettings
     Unity.XR.ARKit.dll:
@@ -22,8 +22,14 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEditor.UIBuilderModule.dll:
+    - Unity.UI.Builder.BuilderDocument
+    UnityEngine.UIElementsGameObjectsModule.dll:
+    - UnityEngine.UIElements.EventSystem
+    - UnityEngine.UIElements.PanelSettings
+    - UnityEngine.UIElements.UIDocument
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/MainScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -32,17 +38,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 65
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -51,22 +51,34 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 620}
     - Class: 114
-      Script: {instanceID: 2304}
+      Script: {instanceID: 622}
     - Class: 114
-      Script: {instanceID: 2962}
+      Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 2966}
+      Script: {instanceID: 1850}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 1932}
     - Class: 114
-      Script: {instanceID: 3602}
+      Script: {instanceID: 3776}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4594}
+    - Class: 114
+      Script: {instanceID: 4736}
+    - Class: 114
+      Script: {instanceID: 4832}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -77,10 +89,10 @@ ScriptsOnlyBuild:
     className: CameraOffset
   - hash:
       serializedVersion: 2
-      Hash: e8733e39efa851172df1c9eaef062265
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARPlane
+      Hash: cafc9a3f06bf99131b68bf2b0f3c5c8b
+    assemblyName: UnityEngine.UIElementsModule.dll
+    namespaceName: UnityEngine.UIElements
+    className: StyleSheet
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -93,6 +105,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: e8733e39efa851172df1c9eaef062265
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPlane
   - hash:
       serializedVersion: 2
       Hash: 04e4a8b0447477cc4e933d9e5311188f
@@ -111,6 +129,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: TransitionArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: e3b5a7f52d5d93bdb16a99ccc29edec5
+    assemblyName: Unity.TextCore.dll
+    namespaceName: UnityEngine.TextCore.Text
+    className: FontAsset
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -161,16 +185,34 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 3165968ba45c74472d279ba04455fccb
+    assemblyName: Unity.TextCore.dll
+    namespaceName: UnityEngine.TextCore.Text
+    className: TextColorGradient
+  - hash:
+      serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 921fb1b5055a7954dac4f7b27e143867
+    assemblyName: Unity.UIElements.Text.dll
+    namespaceName: UnityEngine.UIElements.Text
+    className: PanelTextSettings
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPointCloudMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 29e93ae3998f26eef7a11e95797df761
+    assemblyName: UnityEngine.UIElementsModule.dll
+    namespaceName: UnityEngine.UIElements
+    className: VectorImage
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -335,6 +377,12 @@ ScriptsOnlyBuild:
     className: AREnvironmentProbeManager
   - hash:
       serializedVersion: 2
+      Hash: cafc9a3f06bf99131b68bf2b0f3c5c8b
+    assemblyName: UnityEngine.UIElementsModule.dll
+    namespaceName: UnityEngine.UIElements
+    className: ThemeStyleSheet
+  - hash:
+      serializedVersion: 2
       Hash: de8c2a257a183731115d08b34b7bd746
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -437,6 +485,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
+      Hash: b4452d88af6a777328f956bca03351e3
+    assemblyName: Unity.TextCore.dll
+    namespaceName: UnityEngine.TextCore.Text
+    className: SpriteAsset
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -467,16 +521,16 @@ ScriptsOnlyBuild:
     className: ARTrackedImage
   - hash:
       serializedVersion: 2
+      Hash: 03d4c36981435ae7725f1813a46bd470
+    assemblyName: Unity.TextCore.dll
+    namespaceName: UnityEngine.TextCore.Text
+    className: TextStyleSheet
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: Physics2DRaycaster
-  - hash:
-      serializedVersion: 2
-      Hash: 98aa0a0c8ff2910eb12af89c7e0eb661
-    assemblyName: Unity.XR.Management.dll
-    namespaceName: UnityEngine.XR.Management
-    className: XRGeneralSettings
   - hash:
       serializedVersion: 2
       Hash: da4cc51a02ce84afe2cecd27cfe6997a
@@ -489,6 +543,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 98aa0a0c8ff2910eb12af89c7e0eb661
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRGeneralSettings
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -581,6 +641,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 1b735ddbf71a3645b35c713c782c2fde
+    assemblyName: UnityEngine.UIElementsModule.dll
+    namespaceName: UnityEngine.UIElements
+    className: VisualTreeAsset
+  - hash:
+      serializedVersion: 2
       Hash: e1c35cdce946e9da77fe80a39c261608
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -591,6 +657,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 9402538a143dc082ebf9e80e954c471e
+    assemblyName: UnityEngine.UIElementsGameObjectsModule.dll
+    namespaceName: UnityEngine.UIElements
+    className: UIDocument
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -635,6 +707,18 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
+      Hash: 921fb1b5055a7954dac4f7b27e143867
+    assemblyName: Unity.TextCore.dll
+    namespaceName: UnityEngine.TextCore.Text
+    className: TextSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 8194cfca59461f5ca6f7bbb3b476970f
+    assemblyName: UnityEngine.UIElementsGameObjectsModule.dll
+    namespaceName: UnityEngine.UIElements
+    className: PanelSettings
+  - hash:
+      serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -647,10 +731,22 @@ ScriptsOnlyBuild:
     className: ARHumanBody
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UIElementsGameObjectsModule.dll
+    namespaceName: UnityEngine.UIElements
+    className: InputWrapper
+  - hash:
+      serializedVersion: 2
       Hash: ef705ae677d649d6c0ff3b4060963abd
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARTrackedObjectManager
+  - hash:
+      serializedVersion: 2
+      Hash: 40e6a4921a2e6269c84c2e4aba2d21dc
+    assemblyName: UnityEngine.UIElementsGameObjectsModule.dll
+    namespaceName: UnityEngine.UIElements
+    className: EventSystem
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -767,5 +863,5 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   platform: 9
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/MainScene.unity
   playerPath: /Users/hemranakhtari/Desktop/Uni/Year 3/Knowledge Management/test
