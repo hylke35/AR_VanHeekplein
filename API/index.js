@@ -40,16 +40,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-/*var bodyParser = require('body-parser');
-var xmlparser = require('express-xml-bodyparser');
-
-app.use(bodyParser.json()); 
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  extended: true
-}));
-
-app.use(xmlparser());*/
-
 module.exports = app;
 
 

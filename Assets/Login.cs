@@ -14,6 +14,7 @@ public class Login : MonoBehaviour
     private TextField emailField;
     private TextField passwordField;
     private Button submitButton;
+    private Button signUpButton;
     private Label errorLabel;
 
     private void Create()
@@ -29,9 +30,16 @@ public class Login : MonoBehaviour
         emailField = rootVisualElement.Q<TextField>("email");
         passwordField = rootVisualElement.Q<TextField>("password");
         submitButton = rootVisualElement.Q<Button>("submit");
+        signUpButton = rootVisualElement.Q<Button>("sign-up");
         errorLabel = rootVisualElement.Q<Label>("error-label");
 
         submitButton.RegisterCallback<ClickEvent>(async ev => await LoginUserAsync());
+        signUpButton.RegisterCallback<ClickEvent>(ev => GoToRegisterScene());
+    }
+
+    private void GoToRegisterScene()
+    {
+        SceneManager.LoadScene("SignUpScene");
     }
 
     private async System.Threading.Tasks.Task LoginUserAsync()
@@ -51,7 +59,7 @@ public class Login : MonoBehaviour
                 "http://172.20.10.4:3001/api/v1/avh/login",
                  stringContent);
             var contents = await response.Content.ReadAsStringAsync();
-            LoginResponse loginResponse = JsonConvert.DeserializeObject<LoginResponse>(contents);
+            Response loginResponse = JsonConvert.DeserializeObject<Response>(contents);
 
             if (loginResponse.code == 1)
             {
@@ -65,7 +73,7 @@ public class Login : MonoBehaviour
 
 }
 
-class LoginResponse
+class Response
 {
     public int code { get; set; }
     public string message { get; set; }

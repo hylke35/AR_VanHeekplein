@@ -3,7 +3,8 @@
         <ui:Label text="AR - van Heekplein" display-tooltip-when-elided="true" name="title-label" enable-rich-text="true" style="-unity-text-align: upper-center; width: auto; top: 20%; font-size: 30px;" />
         <ui:TextField picking-mode="Ignore" label="E-Mail Adress" name="email" style="justify-content: flex-start; flex-direction: column; width: 75%; top: 25%; left: 12.5%; font-size: 30px;" />
         <ui:TextField picking-mode="Ignore" label="Password" name="password" password="true" style="justify-content: flex-start; flex-direction: column; width: 75%; top: 30%; left: 12.5%; font-size: 30px;" />
-        <ui:Button text="Log In" display-tooltip-when-elided="true" name="submit" style="width: 75%; left: 12.5%; top: 35%; height: 35px; font-size: 30px;" />
-        <ui:Label display-tooltip-when-elided="true" name="error-label" style="-unity-text-align: upper-center; top: 40%; font-size: 20px; color: rgba(255, 150, 155, 255);" />
+        <ui:Button text="Sign In" display-tooltip-when-elided="true" name="submit" style="width: 75%; left: 12.5%; top: 35%; height: 35px; font-size: 30px;" />
+        <ui:Label display-tooltip-when-elided="true" name="error-label" style="-unity-text-align: upper-center; top: 2.5%; font-size: 20px; color: rgb(255, 150, 155);" />
+        <ui:Button text="Sign Up" display-tooltip-when-elided="true" name="sign-up" style="width: 75%; left: 12.5%; top: 35%; height: 35px; font-size: 30px;" />
     </ui:VisualElement>
 </ui:UXML>
