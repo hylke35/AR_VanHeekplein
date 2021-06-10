@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CE88108D-C722-2D96-2AD6-7BE17AEA4C05}</ProjectGuid>
+    <ProjectGuid>{F02C07A4-C00B-F2DE-F8F0-0EF37249A1BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.XR.ARFoundation.Editor</AssemblyName>
@@ -57,10 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\SceneUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\PlaneDetectionModeAttributeDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\ARCameraBackgroundEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\AROcclusionManagerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\ARSceneValidator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\PlaneDetectionModeAttributeDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\AROcclusionManagerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\ARCameraBackgroundEditor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library\PackageCache\com.unity.xr.arfoundation@4.0.12\Editor\Unity.XR.ARFoundation.Editor.asmdef" />
@@ -658,31 +658,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.XR.ARFoundation.csproj">
-      <Project>{07B99AD9-6C2A-3A27-9E32-3B82DA0BF4F6}</Project>
+      <Project>{A6013AD4-A499-C078-E162-6EA73AB7AFB7}</Project>
       <Name>Unity.XR.ARFoundation</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
-      <Project>{03852141-819C-74C7-FE0C-6C93C3AC08CA}</Project>
+      <Project>{763EE633-F3D7-9D70-3AFA-5E7FD9499EBF}</Project>
       <Name>Unity.XR.ARSubsystems</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{2A9FA3FD-9F5F-D021-EA8F-7ED654053763}</Project>
+      <Project>{FA8F695F-C7E6-E2A6-6695-1E3E5E8D1CC1}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{991F9312-344C-DA08-0403-0986A293C98C}</Project>
+      <Project>{AB3E2664-0DD5-5124-0882-527520E718A8}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E6588A8-ABB8-065B-B39A-C3904E16146C}</Project>
+      <Project>{8CB49C18-3F81-75A4-0833-250EE9869200}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{E4DC1232-5E3A-D182-69C3-C2BCE04FEF56}</Project>
+      <Project>{7787AD61-7F20-0E4D-DBCC-1FD91093DACA}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{4D78E85F-2BD5-4785-EABD-83D014044056}</Project>
+      <Project>{62AF087F-AD3A-5D10-B321-81D170962F28}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F865C1FB-4F9C-6781-9C93-F147273785B5}</ProjectGuid>
+    <ProjectGuid>{EB997846-1F80-4156-5365-75B1F68C982B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.XR.ARCore</AssemblyName>
@@ -56,34 +56,34 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreAnchorSubsystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreRaycastSubsystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCorePlaneSubsystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCorePlaneProvider.deprecated.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreImageTrackingSubsystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreImageTrackingProvider.deprecated.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreFaceRegion.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ImageConversionJobs.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreLoaderSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreLoader.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreSessionSubsystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ArPrestoApi.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\Depth\ARCoreXRDepthSubsystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreFaceRegionData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\Assembly.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCorePermissionManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ManagedReferenceImage.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreImageDatabase.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\RcoApi.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreFaceSubsystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\NativeView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreCameraSubsystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCorePromise.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreBeforeSetConfigurationEventArgs.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreApi.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ArPrestoApi.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreEnvironmentProbeSubsystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\Input\InputLayoutLoader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCorePermissionManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCorePromise.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreFaceRegion.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreApi.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCorePlaneProvider.deprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreCameraSubsystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreRaycastSubsystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ManagedReferenceImage.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\RcoApi.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreLoaderConstants.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreImageTrackingProvider.deprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreLoaderSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreBeforeSetConfigurationEventArgs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreAnchorSubsystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreLoader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\Assembly.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreImageDatabase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreImageTrackingSubsystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreSessionSubsystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\NativeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCorePlaneSubsystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\ARCoreFaceSubsystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\Input\InputLayoutLoader.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Runtime\Unity.XR.ARCore.asmdef" />
@@ -678,19 +678,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
-      <Project>{03852141-819C-74C7-FE0C-6C93C3AC08CA}</Project>
+      <Project>{763EE633-F3D7-9D70-3AFA-5E7FD9499EBF}</Project>
       <Name>Unity.XR.ARSubsystems</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.csproj">
-      <Project>{AD114331-E56F-EB74-B01A-9274CBEC401D}</Project>
+      <Project>{D4ABF87A-AFA8-D29D-A8F6-9B6C6EC15E7F}</Project>
       <Name>Unity.XR.Management</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{991F9312-344C-DA08-0403-0986A293C98C}</Project>
+      <Project>{AB3E2664-0DD5-5124-0882-527520E718A8}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E6588A8-ABB8-065B-B39A-C3904E16146C}</Project>
+      <Project>{8CB49C18-3F81-75A4-0833-250EE9869200}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A6573B62-832A-B00C-987F-33757F1C30D6}</ProjectGuid>
+    <ProjectGuid>{ED3FCEB6-6034-52BA-1E84-70AC3EE94497}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.CollabProxy.Editor</AssemblyName>
@@ -59,93 +59,93 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\IModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\IStartView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\MenuUtilities.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\ListAdapters\ToggleableChangeListAdapter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\StringArrayContainer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\UserInterface\CollaborateWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\Menus\FloatingMenuItem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\HistoryPresenter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Providers\Collab.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\IAdapter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\SearchBar.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\IconButton.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\TabPageComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\SearchBar.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\Threading.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\MainPageView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\SerializableDictionary.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\HistoryModel.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ListNotice.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\StartPresenter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangeListElements\ToggleableChangeListElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\HistoryEntry.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\ChangesTabPageView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\TextButton.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Api\ISourceControlProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\IHistoryModel.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\IChangesModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\IHistoryPresenter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\OpenLinksUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\ListAdapters\ConflictedChangeListAdapter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\Menus\FloatingMenu.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\ChangesModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\UserInterface\Bootstrap.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\MainModel.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\UserInterface\WindowCache.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\StartModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\IChangesPresenter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Settings\CollabSettingsProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\IMainPresenter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\ChangesPresenter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\IHistoryView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\HistoryTabPageView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\IMainModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangeListElements\ChangeListElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\UserInterface\ToolbarButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangeListElements\BaseChangeListElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\AlertBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\StartPageView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\BetterTextField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\IChangeEntryData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\ProgressInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\IPresenter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\ErrorInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ErrorPageView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangesGroupHeader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\ScriptableObjectSingleton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\IView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Assets\StringAssets.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\PageComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\StringUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\HistoryEntryComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\ArrayContainer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\Menus\FloatingDialogue.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Settings\CollabSettingsManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\IChangesView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\ListAdapters\ToggleableChangeListAdapter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\StringArrayContainer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\UserInterface\CollaborateWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\HistoryPresenter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Providers\Collab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\TabPageComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\SerializableDictionary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ListNotice.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\HistoryEntry.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Api\ISourceControlProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\IChangesModel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\ListAdapters\ConflictedChangeListAdapter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\ChangesModel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\UserInterface\WindowCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\StartModel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Settings\CollabSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\IMainPresenter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\ChangesPresenter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\TabView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\ListAdapters\HistoryEntryChangeListAdapter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Assets\UiConstants.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\LocationAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ProgressView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangeListElements\BaseChangeListElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\AlertBox.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\StartPageView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\IStartPresenter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangeListElements\HistoryChangeListElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\IAdapterObserver.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\BetterTextField.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\IStartModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangeEntryGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Settings\CollabSetting.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\IChangeEntryData.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\IChangeEntry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\ProgressInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Settings\CollabSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\IPresenter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\ErrorInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ErrorPageView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangesGroupHeader.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\ListAdapters\BaseListAdapter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Enums\ProjectStatus.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\ChangeListElements\ConflictedChangeListElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\ChangeEntry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\ScriptableObjectSingleton.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\IView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\IHistoryEntry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Assets\StringAssets.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Presenters\MainPresenter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\PageComponent.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\IconTextButton.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\IErrorInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\StringUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\Paginator.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Properties\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\TopBar.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\HistoryEntryComponent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\ArrayContainer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\Menus\FloatingDialogue.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Settings\CollabSettingsManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\ExtensionMethods.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\AdapterListView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\IChangesView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\Structures\IProgressInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\TimeStamp.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\IMainView.cs" />
@@ -782,19 +782,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{991F9312-344C-DA08-0403-0986A293C98C}</Project>
+      <Project>{AB3E2664-0DD5-5124-0882-527520E718A8}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E6588A8-ABB8-065B-B39A-C3904E16146C}</Project>
+      <Project>{8CB49C18-3F81-75A4-0833-250EE9869200}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{E4DC1232-5E3A-D182-69C3-C2BCE04FEF56}</Project>
+      <Project>{7787AD61-7F20-0E4D-DBCC-1FD91093DACA}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{4D78E85F-2BD5-4785-EABD-83D014044056}</Project>
+      <Project>{62AF087F-AD3A-5D10-B321-81D170962F28}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

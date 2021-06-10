@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{65223E32-70A3-758A-8232-EA28A1DFA232}</ProjectGuid>
+    <ProjectGuid>{ABB464C9-0377-8011-84D8-54DADBA74070}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.XR.Management</AssemblyName>
@@ -57,11 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\XRConfigurationData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\XRLoaderHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\XRGeneralSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\XRManagerSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\XRLoader.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\IXRLoaderPreInit.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\XRManagerSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\XRLoaderHelper.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\Unity.XR.Management.asmdef" />
@@ -611,7 +611,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E6588A8-ABB8-065B-B39A-C3904E16146C}</Project>
+      <Project>{8CB49C18-3F81-75A4-0833-250EE9869200}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

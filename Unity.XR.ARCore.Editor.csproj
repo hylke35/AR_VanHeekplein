@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{47585F02-E327-763D-555B-91BD63CBCDB3}</ProjectGuid>
+    <ProjectGuid>{BBABCEFA-C3F1-9D19-3549-7FAF28138EE3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.XR.ARCore.Editor</AssemblyName>
@@ -57,13 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\Gradle.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\ARCoreSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\ARCorePackageMetadata.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\Java.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\Cli.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\ARCoreBuildProcessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\Java.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\ARCoreSettingsProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\Gradle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\ARCorePackageMetadata.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library\PackageCache\com.unity.xr.arcore@4.0.12\Editor\Unity.XR.ARCore.Editor.asmdef" />
@@ -661,39 +661,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.XR.ARCore.csproj">
-      <Project>{F865C1FB-4F9C-6781-9C93-F147273785B5}</Project>
+      <Project>{EB997846-1F80-4156-5365-75B1F68C982B}</Project>
       <Name>Unity.XR.ARCore</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
-      <Project>{03852141-819C-74C7-FE0C-6C93C3AC08CA}</Project>
+      <Project>{763EE633-F3D7-9D70-3AFA-5E7FD9499EBF}</Project>
       <Name>Unity.XR.ARSubsystems</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.ARSubsystems.Editor.csproj">
-      <Project>{EB85957D-153E-6800-E91F-05AFEE3D2C44}</Project>
+      <Project>{6A03060E-7A92-96F8-998F-6035E3AF3EC1}</Project>
       <Name>Unity.XR.ARSubsystems.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.csproj">
-      <Project>{AD114331-E56F-EB74-B01A-9274CBEC401D}</Project>
+      <Project>{D4ABF87A-AFA8-D29D-A8F6-9B6C6EC15E7F}</Project>
       <Name>Unity.XR.Management</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Editor.csproj">
-      <Project>{BFC7DA0A-A16F-BDEC-8A90-CBC3DAEE8B6B}</Project>
+      <Project>{277D29AE-CA3C-6AF7-C301-9C6A1A84D8B1}</Project>
       <Name>Unity.XR.Management.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{991F9312-344C-DA08-0403-0986A293C98C}</Project>
+      <Project>{AB3E2664-0DD5-5124-0882-527520E718A8}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E6588A8-ABB8-065B-B39A-C3904E16146C}</Project>
+      <Project>{8CB49C18-3F81-75A4-0833-250EE9869200}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{E4DC1232-5E3A-D182-69C3-C2BCE04FEF56}</Project>
+      <Project>{7787AD61-7F20-0E4D-DBCC-1FD91093DACA}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{4D78E85F-2BD5-4785-EABD-83D014044056}</Project>
+      <Project>{62AF087F-AD3A-5D10-B321-81D170962F28}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

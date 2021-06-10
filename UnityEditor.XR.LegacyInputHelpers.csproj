@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{28C5783E-88DE-9919-3EF3-D71F6FF9010A}</ProjectGuid>
+    <ProjectGuid>{766EE61B-672A-5C69-D553-F8999F71827E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEditor.XR.LegacyInputHelpers</AssemblyName>
@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\SeedXRInputBindings\SeedXRInputBindings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\ArmModels\SwingArmModelEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\MenuUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\CameraOffsetEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\ArmModels\TransitionArmModelEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\SeedXRInputBindings\SeedXRInputBindings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\ArmModels\SwingArmModelEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\ArmModels\ArmModelEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\MenuUtils.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7\Editor\LegacyInputHelpersEditor.asmdef" />
@@ -659,27 +659,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{3AA45FAB-ED54-D64F-2A31-5D68C6A03ABB}</Project>
+      <Project>{C2806A4D-0619-88FA-7DDB-284131ABE679}</Project>
       <Name>UnityEngine.XR.LegacyInputHelpers</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{2A9FA3FD-9F5F-D021-EA8F-7ED654053763}</Project>
+      <Project>{FA8F695F-C7E6-E2A6-6695-1E3E5E8D1CC1}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{991F9312-344C-DA08-0403-0986A293C98C}</Project>
+      <Project>{AB3E2664-0DD5-5124-0882-527520E718A8}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E6588A8-ABB8-065B-B39A-C3904E16146C}</Project>
+      <Project>{8CB49C18-3F81-75A4-0833-250EE9869200}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{E4DC1232-5E3A-D182-69C3-C2BCE04FEF56}</Project>
+      <Project>{7787AD61-7F20-0E4D-DBCC-1FD91093DACA}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{4D78E85F-2BD5-4785-EABD-83D014044056}</Project>
+      <Project>{62AF087F-AD3A-5D10-B321-81D170962F28}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

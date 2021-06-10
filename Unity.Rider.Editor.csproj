@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{540AD952-668F-C812-B5CB-2614D7921A28}</ProjectGuid>
+    <ProjectGuid>{F50FA3E5-B434-916B-D1DB-F653643E1EC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Rider.Editor</AssemblyName>
@@ -59,13 +59,9 @@
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\EditorPluginInterop.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\TestEvent.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Discovery.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderScriptEditorData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\SyncTestRunCallback.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\ProjectGenerationFlag.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\TestsCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\GUIDProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\CallbackInitializer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\CommandLineParser.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\SerializableVersion.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IGUIDGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderFileSystemWatcher.cs" />
@@ -73,21 +69,25 @@
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\SyncTestRunEventsHandler.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\CallbackData.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderScriptEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\ProjectGeneration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\FileIOProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\SolutionGuidGenerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IAssemblyNameProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IGenerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\RiderTestRunner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\RiderMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderScriptEditorData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\SyncTestRunCallback.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\ProjectGenerationFlag.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\CommandLineParser.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\LoggingLevel.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\PluginSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Properties\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\PostProcessors\RiderAssetPostprocessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderInitializer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\FileSystemUtil.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\ProjectGeneration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\FileIOProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\AssemblyNameProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IFileIO.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\SolutionGuidGenerator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IAssemblyNameProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IGenerator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\RiderTestRunner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\RiderMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\com.unity.ide.rider.asmdef" />
@@ -685,19 +685,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{4D78E85F-2BD5-4785-EABD-83D014044056}</Project>
+      <Project>{62AF087F-AD3A-5D10-B321-81D170962F28}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{E4DC1232-5E3A-D182-69C3-C2BCE04FEF56}</Project>
+      <Project>{7787AD61-7F20-0E4D-DBCC-1FD91093DACA}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{991F9312-344C-DA08-0403-0986A293C98C}</Project>
+      <Project>{AB3E2664-0DD5-5124-0882-527520E718A8}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E6588A8-ABB8-065B-B39A-C3904E16146C}</Project>
+      <Project>{8CB49C18-3F81-75A4-0833-250EE9869200}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
