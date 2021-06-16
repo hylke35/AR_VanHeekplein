@@ -57,7 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\Seach.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\SearchItem.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
