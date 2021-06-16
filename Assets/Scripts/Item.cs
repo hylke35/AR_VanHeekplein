@@ -7,6 +7,8 @@ public class Item : MonoBehaviour
 {
     [SerializeField]
     public Text itemName;
+    public List<GameObject> reviewScores;
+    public GameObject Star;
     // Start is called before the first frame update
     void Start()
     {
