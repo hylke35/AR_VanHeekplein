@@ -7,22 +7,42 @@ public class Item : MonoBehaviour
 {
     [SerializeField]
     public Text itemName;
-    public List<GameObject> reviewScores;
+    //public List<GameObject> reviewScores;
     public GameObject Star;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-       
-    }
+    private int id { get; set; }
 
-    public void SetText(string textString)
+    public Text description;
+    public Text uploadedAt;
+    public Text Longitude;
+    public Text Latitude;
+    private double latitude { get; set; }
+
+
+
+
+
+    public void SetItemName(string textString)
     {
         itemName.text = textString;
     }
-    // Update is called once per frame
-    void Update()
+
+    public void SetItemDesc(string textString)
     {
-        
+        description.text = textString;
+    }
+    public void SetUploadedAt(string textString)
+    {
+        uploadedAt.text = textString;
+    }
+
+    public void SetLongitude(double longitude)
+    {
+        this.Longitude.text = longitude.ToString();
+    }
+    
+    public void SetLatitude(double latitude)
+    {
+        this.Latitude.text = latitude.ToString();
     }
 }

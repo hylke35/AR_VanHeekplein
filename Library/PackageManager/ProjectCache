@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637563521573673844
-    m_Hash: 2594532273
+      ticks: 637595291569885925
+    m_Hash: 3718988949
   m_LockFileStatus:
     m_FilePath: C:/Users/Zaco/Documents/GitHub/AR_VanHeekplein/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637563521573763604
+      ticks: 637595291569945764
     m_Hash: 423601006
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -429,10 +429,12 @@ m_PackageAssets:
         - 1.1.22
         - 1.1.24
         - 1.1.26
+        - 1.1.27
         compatible:
         - 1.1.24
         - 1.1.26
-        verified: 1.1.26
+        - 1.1.27
+        verified: 1.1.27
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -3342,6 +3344,8 @@ m_PackageAssets:
         - 4.2.0-pre.4
         - 4.2.0-pre.5
         - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
         compatible:
         - 4.0.8
         - 4.0.9
@@ -3367,6 +3371,8 @@ m_PackageAssets:
         - 4.2.0-pre.4
         - 4.2.0-pre.5
         - 4.2.0-pre.7
+        - 4.2.0-pre.8
+        - 4.2.0-pre.9
         verified: 4.0.12
       dependencies:
       - name: com.unity.subsystemregistration
@@ -3462,6 +3468,7 @@ m_PackageAssets:
         - 4.0.1
         - 4.0.3
         - 4.0.5
+        - 4.0.6
         compatible:
         - 3.2.13
         - 3.2.15
@@ -3473,7 +3480,8 @@ m_PackageAssets:
         - 4.0.1
         - 4.0.3
         - 4.0.5
-        verified: 4.0.5
+        - 4.0.6
+        verified: 4.0.6
       dependencies:
       - name: com.unity.modules.subsystems
         version: 1.0.0
