@@ -14,13 +14,17 @@ public class Item : MonoBehaviour
 
     public Text description;
     public Text uploadedAt;
-    public Text Longitude;
-    public Text Latitude;
+/*    public Text Longitude;
+    public Text Latitude;*/
     private double latitude { get; set; }
 
 
 
 
+    public string GetItemName()
+    {
+        return itemName.text;
+    }
 
     public void SetItemName(string textString)
     {
@@ -36,7 +40,7 @@ public class Item : MonoBehaviour
         uploadedAt.text = textString;
     }
 
-    public void SetLongitude(double longitude)
+/*    public void SetLongitude(double longitude)
     {
         this.Longitude.text = longitude.ToString();
     }
@@ -44,5 +48,5 @@ public class Item : MonoBehaviour
     public void SetLatitude(double latitude)
     {
         this.Latitude.text = latitude.ToString();
-    }
+    }*/
 }

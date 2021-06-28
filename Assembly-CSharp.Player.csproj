@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\APIResponse.cs" />
     <Compile Include="Assets\Scripts\SearchItem.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\ARPlaceObject.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Data.cs" />
   </ItemGroup>
