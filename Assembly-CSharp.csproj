@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\ARPlaceObject.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Data.cs" />
+    <Compile Include="Assets\Scripts\ReviewData.cs" />
+    <Compile Include="Assets\Scripts\APIResponseReview.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
