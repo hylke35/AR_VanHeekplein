@@ -59,11 +59,11 @@ public class SearchItem : MonoBehaviour
                 item.transform.SetParent(itemTemplate.transform.parent, false);
 
                 objectsList.Add(item);
-                apiResponse.data.OrderBy(go => GetReviews(data.id)).ToArray();
+             /*   apiResponse.data.OrderBy(go => GetReviews(data.id)).ToArray();
                 for (int i = 0; i < apiResponse.data.Count; i++)
                 {
                     objectsList[i].transform.SetSiblingIndex(i);
-                }
+                }*/
 
             }
 
