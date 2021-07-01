@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class SearchItem : MonoBehaviour
     {
         //PostReview(17, 5);
         GetObjects();
-      
+     
     }
 
 
@@ -35,8 +36,8 @@ public class SearchItem : MonoBehaviour
 
             foreach (Data data in apiResponse.data)
             {
-
-
+               
+                
                 item = Instantiate(itemTemplate);
                 item.SetActive(true);
                 Debug.Log(data.id);
@@ -58,6 +59,11 @@ public class SearchItem : MonoBehaviour
                 item.transform.SetParent(itemTemplate.transform.parent, false);
 
                 objectsList.Add(item);
+                apiResponse.data.OrderBy(go => GetReviews(data.id)).ToArray();
+                for (int i = 0; i < apiResponse.data.Count; i++)
+                {
+                    objectsList[i].transform.SetSiblingIndex(i);
+                }
 
             }
 

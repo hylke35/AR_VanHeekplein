@@ -8,12 +8,12 @@ ScriptsOnlyBuild:
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
-    - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
     Unity.XR.ARCore.Editor.dll:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARCore.dll:
@@ -45,6 +45,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
@@ -53,6 +54,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
     Assets/Scenes/ARScene.unity:
@@ -75,9 +77,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 2370}
+      Script: {instanceID: 2368}
     - Class: 114
       Script: {instanceID: 3056}
     - Class: 114
@@ -85,7 +87,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3480}
     - Class: 114
-      Script: {instanceID: 3710}
+      Script: {instanceID: 3712}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -124,25 +126,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 1764}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 2030}
+      Script: {instanceID: 1762}
     - Class: 114
-      Script: {instanceID: 2040}
+      Script: {instanceID: 2028}
     - Class: 114
-      Script: {instanceID: 2170}
+      Script: {instanceID: 2038}
     - Class: 114
-      Script: {instanceID: 2344}
+      Script: {instanceID: 2168}
     - Class: 114
-      Script: {instanceID: 2370}
+      Script: {instanceID: 2342}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2368}
     - Class: 114
-      Script: {instanceID: 2492}
+      Script: {instanceID: 2440}
     - Class: 114
       Script: {instanceID: 2604}
     - Class: 114
@@ -170,21 +172,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3480}
     - Class: 114
-      Script: {instanceID: 3622}
+      Script: {instanceID: 3486}
     - Class: 114
-      Script: {instanceID: 3710}
+      Script: {instanceID: 3624}
     - Class: 114
-      Script: {instanceID: 3744}
+      Script: {instanceID: 3712}
     - Class: 114
-      Script: {instanceID: 3758}
+      Script: {instanceID: 3746}
     - Class: 114
-      Script: {instanceID: 3774}
+      Script: {instanceID: 3776}
     - Class: 114
-      Script: {instanceID: 3852}
+      Script: {instanceID: 3854}
     - Class: 114
-      Script: {instanceID: 4122}
+      Script: {instanceID: 4124}
     - Class: 114
-      Script: {instanceID: 4282}
+      Script: {instanceID: 4284}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -200,6 +202,51 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/MapScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1624}
+    - Class: 114
+      Script: {instanceID: 2368}
+    - Class: 114
+      Script: {instanceID: 3056}
+    - Class: 114
+      Script: {instanceID: 3058}
+    - Class: 114
+      Script: {instanceID: 3382}
+    - Class: 114
+      Script: {instanceID: 3480}
+    - Class: 114
+      Script: {instanceID: 3712}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -462,7 +509,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 5b340d66d967cd04e290e59d1ef6c24b
+      Hash: 7ee0321efb6390445f3255991fe6cdf9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SearchItem
@@ -660,7 +707,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 26043acb4e3b3abc60f9c700b858849d
+      Hash: cf8165e5594297e9113e3875432d5101
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARPlaceObject
@@ -756,7 +803,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 7a32f7cf57e1a1841c37de9a0ae335c6
+      Hash: 985cec2b85745ed806b220b6eed02ea4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Item
@@ -938,4 +985,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/ARScene.unity
+  - Assets/Scenes/MapScene.unity
   playerPath: C:/Users/Zaco/Documents/GitHub/AR_VanHeekplein/apk/test.apk

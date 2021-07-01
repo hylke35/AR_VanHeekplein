@@ -7,14 +7,15 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField]
+    
     public Text itemName;
     //public List<GameObject> reviewScores;
     public GameObject EmptyStar;
     public GameObject FullStar;
     private string review;
     private int Id;
-    
+
+    public Text successText;
     public Text description;
     public Text uploadedAt;
 /*    public Text Longitude;
@@ -96,8 +97,15 @@ public class Item : MonoBehaviour
         if (response.IsSuccessStatusCode)
         {
             var contents = await response.Content.ReadAsStringAsync();
+            successText.text = "Review submitted!";
+            Invoke(nameof(DisableText), 5f);
             Debug.Log(contents);
         }
+    }
+
+    void DisableText()
+    {
+        successText.enabled = false;
     }
     public void SetItemName(string textString)
     {
