@@ -14,11 +14,15 @@ public class ARPlaceObject : MonoBehaviour
     
      public new Transform transform;
 
+    // Place the map object in a static position.
     void Start()
     {
 
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
+
+        //Change position based on Scene
+
         if (sceneName == "MainMenu")
         {
             placemenetPose.position.z += 0.4f;

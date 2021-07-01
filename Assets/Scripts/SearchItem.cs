@@ -15,15 +15,16 @@ public class SearchItem : MonoBehaviour
     private GameObject item;
     public Dropdown dropDown;
     public GameObject itemTemplate;
+
+
     // Start is called before the first frame update
     public void Start()
     {
-        //PostReview(17, 5);
         GetObjects();
-     
     }
 
 
+    //Get the objects which are approved from the database;
     public async void GetObjects()
     {
         using var client = new HttpClient();
@@ -47,7 +48,6 @@ public class SearchItem : MonoBehaviour
                 /*item.GetComponent<Item>().SetLongitude(data.longitude);
                 item.GetComponent<Item>().SetLatitude(data.latitude);*/
                 item.GetComponent<Item>().SetUploadedAt(data.updated_at);
-                //item.GetComponent<Item>().SetReview("3");
                 double stars = await GetReviews(data.id);
 
                 string starsString = stars.ToString();
@@ -72,7 +72,7 @@ public class SearchItem : MonoBehaviour
 
     }
 
-
+    //An API call to get the average review score of an object
     public async Task<double> GetReviews(int Id)
     {
         double average = 0;
@@ -109,6 +109,8 @@ public class SearchItem : MonoBehaviour
         return average;
     }
 
+
+    //Search the list created to and compare it to the input of the InputField
     public void SearchList(string input)
         {
         foreach(GameObject item in objectsList)
@@ -129,7 +131,7 @@ public class SearchItem : MonoBehaviour
     }
 
 
-        // Update is called once per frame
+    
   
    
 }

@@ -6,7 +6,7 @@ using System.Text;
 
 public class ObjImporter
 {
-
+    //A struct used as an interface for objected to be uploaded.
     private struct meshStruct
     {
         public Vector3[] vertices;
@@ -59,6 +59,8 @@ public class ObjImporter
         return mesh;
     }
 
+
+    //Initiliaze Mesh struct for the object to be uploaded
     private static meshStruct createMeshStruct(string filename)
     {
         int triangles = 0;
@@ -125,6 +127,8 @@ public class ObjImporter
         return mesh;
     }
 
+
+    //Populate the Mesh struct with the relative object parts
     private static void populateMeshStruct(ref meshStruct mesh)
     {
         StreamReader stream = File.OpenText(mesh.fileName);

@@ -20,10 +20,14 @@ public class test : MonoBehaviour
     private GameObject spawnedObject;
     private Pose PlacementPose;
     private ARRaycastManager aRRaycastManager;
-    private bool placementPoseIsValid = false;
+/*    private bool placementPoseIsValid = false;*/
 
     void Start()
     {
+        if (!UnityEngine.Android.Permission.HasUserAuthorizedPermission(UnityEngine.Android.Permission.CoarseLocation))
+        {
+            UnityEngine.Android.Permission.RequestUserPermission(UnityEngine.Android.Permission.CoarseLocation);
+        }
         aRRaycastManager = FindObjectOfType<ARRaycastManager>();
         tesst();
     }
@@ -37,10 +41,10 @@ public class test : MonoBehaviour
     // need to update placement indicator, placement pose and spawn 
     void Update()
     {
-        if (spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+/*        if (spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             ARPlaceObject();
-        }
+        }*/
 
 
         //UpdatePlacementPose();
@@ -76,6 +80,9 @@ public class test : MonoBehaviour
     //    }
     //}
 
+
+
+    //Place AR object according to coordinates
     void ARPlaceObject()
     {
         spawnedObject = Instantiate(arObjectToSpawn, PlacementPose.position, PlacementPose.rotation);
@@ -98,6 +105,7 @@ public class test : MonoBehaviour
         PlaceAtLocation.AddPlaceAtComponent(arObjectToSpawn, loc, opts);
     }
 
+    //Imports all objects approved to the AR Scene
     private async Task Run()
     {
         using (var client = new HttpClient())
@@ -122,6 +130,7 @@ public class test : MonoBehaviour
         Debug.Log(arObjectToSpawn);
     }
 
+    //Getting the objects file path and loading it with setting the location data of the objects.
     IEnumerator ImportObject(Data data)
     {
         Debug.Log(data.file_path);
@@ -136,22 +145,22 @@ public class test : MonoBehaviour
         var loadedObj = new OBJLoader().Load(textStream);
         
         arObjectToSpawn = loadedObj;
-        //var loc = new Location()
-        //{
-        //    Latitude = 53.227060665274415,
-        //    Longitude = 6.559411701442516,
-        //    Altitude = 0,
-        //    AltitudeMode = AltitudeMode.GroundRelative
-        //};
+        var loc = new Location()
+        {
+            Latitude = data.latitude,
+            Longitude = data.longitude,
+            Altitude = data.floatingHeight,
+            AltitudeMode = AltitudeMode.DeviceRelative
+        };
 
-        //var opts = new PlaceAtLocation.PlaceAtOptions()
-        //{
-        //    HideObjectUntilItIsPlaced = true,
-        //    MaxNumberOfLocationUpdates = 2,
-        //    MovementSmoothing = 0.5f,
-        //    UseMovingAverage = false
-        //};
+        var opts = new PlaceAtLocation.PlaceAtOptions()
+        {
+            HideObjectUntilItIsPlaced = true,
+            MaxNumberOfLocationUpdates = 2,
+            MovementSmoothing = 0.5f,
+            UseMovingAverage = false
+        };
 
-        //PlaceAtLocation.AddPlaceAtComponent(loadedObj, loc, opts);
+        PlaceAtLocation.AddPlaceAtComponent(loadedObj, loc, opts);
     }
 }

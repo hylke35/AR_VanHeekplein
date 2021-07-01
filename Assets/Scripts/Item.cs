@@ -7,20 +7,22 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
-    
+    //Public variables to set from the API and display on Unity
     public Text itemName;
-    //public List<GameObject> reviewScores;
     public GameObject EmptyStar;
     public GameObject FullStar;
-    private string review;
-    private int Id;
-
     public Text successText;
     public Text description;
     public Text uploadedAt;
-/*    public Text Longitude;
+    /*    public Text Longitude;
     public Text Latitude;*/
-    private double latitude { get; set; }
+
+    //Private variables used for functions.
+    private string review;
+    private int Id;
+
+    
+
 
 
  
@@ -38,6 +40,7 @@ public class Item : MonoBehaviour
         return Id;
     }
 
+    //Setting the stars SetActive() function based on the average number of all reviews
     public void SetFullStars()
     {
         switch(review)
@@ -78,7 +81,8 @@ public class Item : MonoBehaviour
         return itemName.text;
     }
 
-   
+    
+    //Posting a review to the database using the API
     public async void PostReview(int review)
     {
 
@@ -98,7 +102,10 @@ public class Item : MonoBehaviour
         {
             var contents = await response.Content.ReadAsStringAsync();
             successText.text = "Review submitted!";
-            Invoke(nameof(DisableText), 5f);
+
+            //Disable text after 4 seconds
+
+            Invoke(nameof(DisableText), 4f);
             Debug.Log(contents);
         }
     }
