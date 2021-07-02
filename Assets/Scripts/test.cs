@@ -147,7 +147,7 @@ public class test : MonoBehaviour
         arObjectToSpawn = loadedObj;
 
         Debug.Log(data.latitude + ", " + data.longitude);
-        System.Threading.Thread.Sleep(10000);
+        
         var loc = new Location()
         {
             Latitude = data.latitude,
