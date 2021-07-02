@@ -20,7 +20,7 @@ public class test : MonoBehaviour
     private GameObject spawnedObject;
     private Pose PlacementPose;
     private ARRaycastManager aRRaycastManager;
-/*    private bool placementPoseIsValid = false;*/
+    private bool placementPoseIsValid = false;
 
     void Start()
     {
@@ -41,57 +41,57 @@ public class test : MonoBehaviour
     // need to update placement indicator, placement pose and spawn 
     void Update()
     {
-/*        if (spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             ARPlaceObject();
-        }*/
+        }
 
 
-        //UpdatePlacementPose();
-        //UpdatePlacementIndicator();
+        UpdatePlacementPose();
+        UpdatePlacementIndicator();
 
 
 
 
     }
-    //void UpdatePlacementIndicator()
-    //{
-    //    if (spawnedObject == null && placementPoseIsValid)
-    //    {
-    //        placementIndicator.SetActive(true);
-    //        placementIndicator.transform.SetPositionAndRotation(PlacementPose.position, PlacementPose.rotation);
-    //    }
-    //    else
-    //    {
-    //        placementIndicator.SetActive(false);
-    //    }
-    //}
+    void UpdatePlacementIndicator()
+    {
+        if (spawnedObject == null && placementPoseIsValid)
+        {
+            placementIndicator.SetActive(true);
+            placementIndicator.transform.SetPositionAndRotation(PlacementPose.position, PlacementPose.rotation);
+        }
+        else
+        {
+            placementIndicator.SetActive(false);
+        }
+    }
 
-    //void UpdatePlacementPose()
-    //{
-    //    var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
-    //    var hits = new List<ARRaycastHit>();
-    //    aRRaycastManager.Raycast(screenCenter, hits, TrackableType.Planes);
+    void UpdatePlacementPose()
+    {
+        var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
+        var hits = new List<ARRaycastHit>();
+        aRRaycastManager.Raycast(screenCenter, hits, TrackableType.Planes);
 
-    //    placementPoseIsValid = hits.Count > 0;
-    //    if (placementPoseIsValid)
-    //    {
-    //        PlacementPose = hits[0].pose;
-    //    }
-    //}
+        placementPoseIsValid = hits.Count > 0;
+        if (placementPoseIsValid)
+        {
+            PlacementPose = hits[0].pose;
+        }
+    }
 
 
 
     //Place AR object according to coordinates
     void ARPlaceObject()
     {
-        spawnedObject = Instantiate(arObjectToSpawn, PlacementPose.position, PlacementPose.rotation);
+        /*spawnedObject = Instantiate(arObjectToSpawn, PlacementPose.position, PlacementPose.rotation);
         var loc = new Location()
         {
-            Latitude = 53.227060665274415,
-            Longitude = 6.559411701442516,
+            Latitude = 48.113598385468,
+            Longitude = 11.583365690592,
             Altitude = 0,
-            AltitudeMode = AltitudeMode.DeviceRelative
+            AltitudeMode = AltitudeMode.GroundRelative
         };
 
         var opts = new PlaceAtLocation.PlaceAtOptions()
@@ -102,7 +102,7 @@ public class test : MonoBehaviour
             UseMovingAverage = false
         };
 
-        PlaceAtLocation.AddPlaceAtComponent(arObjectToSpawn, loc, opts);
+        PlaceAtLocation.AddPlaceAtComponent(arObjectToSpawn, loc, opts);*/
     }
 
     //Imports all objects approved to the AR Scene
@@ -143,22 +143,26 @@ public class test : MonoBehaviour
 
         var textStream = new MemoryStream(Encoding.UTF8.GetBytes(www.text));
         var loadedObj = new OBJLoader().Load(textStream);
-        
+
         arObjectToSpawn = loadedObj;
+
+        Debug.Log(data.latitude + ", " + data.longitude);
+        System.Threading.Thread.Sleep(10000);
         var loc = new Location()
         {
             Latitude = data.latitude,
             Longitude = data.longitude,
             Altitude = data.floatingHeight,
-            AltitudeMode = AltitudeMode.DeviceRelative
+            AltitudeMode = AltitudeMode.GroundRelative
         };
 
         var opts = new PlaceAtLocation.PlaceAtOptions()
         {
             HideObjectUntilItIsPlaced = true,
-            MaxNumberOfLocationUpdates = 2,
+            MaxNumberOfLocationUpdates = 5,
             MovementSmoothing = 0.5f,
-            UseMovingAverage = false
+            UseMovingAverage = false,
+            ShowObjectAfterThisManyUpdates = 5
         };
 
         PlaceAtLocation.AddPlaceAtComponent(loadedObj, loc, opts);
