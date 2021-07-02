@@ -97,7 +97,7 @@
     <Compile Include="Assets\OBJImport\TextureLoader\ColorExtensions.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Location\MockLocationProvider.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\DevCameraController.cs" />
-    <Compile Include="Assets\OBJImporter.cs" />
+    <Compile Include="Assets\Scripts\OBJImporter.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\UI\ARTrackingInfo.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\WebMapEditor\WebMapLoader.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\FollowCameraPosition.cs" />
@@ -142,7 +142,7 @@
     <Compile Include="Assets\ARLocation\Scripts\Math\Spline.cs" />
     <Compile Include="Assets\OBJImport\StringExtensions.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\UI\DebugInfoOverlay.cs" />
-    <Compile Include="Assets\test.cs" />
+    <Compile Include="Assets\Scripts\test.cs" />
     <Compile Include="Assets\ARLocation\Experimental\World Builder\WorldBuilder.cs" />
     <Compile Include="Assets\OBJImport\MTLLoader.cs" />
   </ItemGroup>
